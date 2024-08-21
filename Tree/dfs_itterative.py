@@ -13,7 +13,6 @@ class Node:
 Preorder  : (root,left,right)   => 1,2,4,5,3,6,7
 Inorder   : (left,root,right)   => 4,2,5,1,6,3,7
 Postorder : (left,right,root)   => 4,5,2,6,7,3,1
-df sds
 """   
   
 class Tree: 

@@ -1,9 +1,12 @@
-class Node:
-    def __init__(self,value):
-        self.left = None
-        self.right = None
-        self.value = value
 """
+To implement a Depth-First Search (DFS) traversal of a binary tree in Python, 
+you can use either a recursive approach or an iterative approach using a stack. 
+DFS can be performed in three different orders:
+
+i.      In-Order Traversal 
+ii.     Pre-Order Traversal 
+iii.    Post-Order Traversal 
+
         1
        / \
       2   3
@@ -14,7 +17,13 @@ Preorder  : (root,left,right)   => 1,2,4,5,3,6,7
 Inorder   : (left,root,right)   => 4,2,5,1,6,3,7
 Postorder : (left,right,root)   => 4,5,2,6,7,3,1
 """   
-  
+
+class Node:
+    def __init__(self,value):
+        self.left = None
+        self.right = None
+        self.value = value
+        
 class Tree: 
     def __init__(self):
         self.root = Node(1)
