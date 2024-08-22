@@ -18,7 +18,7 @@ def shortestPath(no_of_nodes,edges,src):
     print(graph)
     
     # initialize a distance array for size no_of_nodes
-    distance = [float('inf')] * no_of_nodes
+    distance = [-1] * no_of_nodes
     # distance from src node to itself is 0
     distance[src] = 0
     
@@ -30,7 +30,7 @@ def shortestPath(no_of_nodes,edges,src):
         front = q.popleft()
         
         for neighbour in graph[front]:
-            if distance[neighbour] == float('inf'): # Not visited Neighbour
+            if distance[neighbour] == -1: # Not visited Neighbour
                 distance[neighbour] = 1 + distance[front] 
                 q.append(neighbour)
     return distance
